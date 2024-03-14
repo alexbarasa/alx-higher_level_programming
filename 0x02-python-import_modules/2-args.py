@@ -8,7 +8,7 @@ def args():
     if len(arg) == 1:
         print("{} argument:".format(len(arg)))
     elif len(arg) == 0:
-        print("{} argument.".format(len(arg)))
+        print("{} arguments.".format(len(arg)))
     else:
         print("{} arguments:".format(len(arg)))
     for i, j in enumerate(arg):
