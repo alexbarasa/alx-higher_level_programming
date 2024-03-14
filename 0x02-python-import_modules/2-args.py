@@ -8,3 +8,5 @@ else:
     print("{} arguments".format(len(arg)))
 for i, j in enumerate(arg):
     print("{}{} {}".format(i + 1, ':', j))
+if __name__ == "main":
+    pass
