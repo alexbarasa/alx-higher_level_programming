@@ -3,10 +3,9 @@ def no_c(my_string):
 
     if not my_string:
         return
-    s = "AlexbarasaNyongesa"
     c = ''
-    for i in s:
-        if i in 'Aa':
+    for i in my_string:
+        if i in 'Cc':
             pass
         else:
             c += i
