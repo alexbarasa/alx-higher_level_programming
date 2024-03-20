@@ -3,5 +3,8 @@ def uniq_add(my_list=[]):
 
     if not my_list:
         return
-    new = set(my_list)
-    return sum(new)
+    new = set()
+    for i in my_list:
+        new.add(i)
+    total = sum(new)
+    return total
