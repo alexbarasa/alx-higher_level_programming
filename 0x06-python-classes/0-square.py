@@ -8,4 +8,16 @@ class Square:
     Attributes:
         No attributes are defined yet.
     """
-    pass
+    def __init__(self):
+        """
+        Initializes a Square object with the specified side length.
+
+        Args:
+            side_length (float or int): The length of each side of the square.
+
+        Example:
+            >>> square = Square(5)
+            >>> square.side_length
+            5
+        """
+        # self.side_length = side_length
