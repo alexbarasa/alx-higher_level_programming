@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 import sys
+
+
 def safe_print_integer_err(value):
+
     try:
         # Attempt to convert the value to an integer
         integer_value = int(value)
@@ -10,7 +13,8 @@ def safe_print_integer_err(value):
     except ValueError:
         # If conversion fails, print an error message to stderr
         if isinstance(value, str):
-            print("Exception: Unknown format code 'd' for object of type 'str'", file=sys.stderr)
+            print("Exception: Unknown format code 'd'"
+                  "for object of type 'str'", file=sys.stderr)
         else:
             print("Unknown error")
         return (False)
