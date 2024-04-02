@@ -6,8 +6,8 @@ def list_division(my_list_1, my_list_2, list_length):
         try:
             if i >= len(my_list_1) or i >= len(my_list_2):
                 raise IndexError("out of range")
-            value_1 = my_list_1[i]
-            value_2 = my_list_2[i]
+            value1 = my_list_1[i]
+            value2 = my_list_2[i]
             if not isinstance(value1, (int, float)) or \
                     not isinstance(value2, (int, float)):
                 raise TypeError("wrong type")
@@ -25,4 +25,5 @@ def list_division(my_list_1, my_list_2, list_length):
             result.append(0)
         finally:
             continue
+    # print(result)
     return (result)
