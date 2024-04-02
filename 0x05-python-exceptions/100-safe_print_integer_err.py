@@ -9,7 +9,8 @@ def safe_print_integer_err(value):
         return (True)
     except ValueError:
         # If conversion fails, print an error message to stderr
-        print("Exception: Unknown format code 'd' for object of type 'str'", file=sys.stderr)
+        print("Exception: ValueError occurred: Unknown format code 'd' for object of type '{}'".format(type(value).__name__), file=sys.stderr)
+        # print(f"Exception: Unknown format code {value} for object of type 'str'", file=sys.stderr)
         return (False)
     except Exception as e:
         # If any other exception occurs, print an error message to stderr
