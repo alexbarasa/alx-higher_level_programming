@@ -16,7 +16,7 @@ class Square:
     Attributes:
         No attributes are defined yet.
     """
-    def __init__(self, size = 0):
+    def __init__(self, size=0):
 
         """
         Initializes a Square object with the specified side length.
