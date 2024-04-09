@@ -1,0 +1,76 @@
+=========================
+How to use matrix_mul.py
+==========================
+
+Import function from module
+----------------------------
+
+>>> matrix_mul = __import__('100-matrix_mul').matrix_mul
+
+Using matrix_mul
+-------------------
+
+# Test case 1: Valid matrices multiplication
+>>> m_a = [[1, 2, 3], [4, 5, 6]]
+>>> m_b = [[7, 8], [9, 10], [11, 12]]
+>>> matrix_mul(m_a, m_b)
+[[58, 64], [139, 154]]
+
+# Test case 2: Matrices with non-integer/float elements
+>>> m_a = [[1, 2, 'a'], [4, 5, 6]]
+>>> m_b = [[7, 8], [9, 10], [11, 12]]
+>>> matrix_mul(m_a, m_b)
+Traceback (most recent call last):
+    ...
+TypeError: m_a should contain only integers or floats or m_b should contain only integers or floats
+
+Edge cases:
+----------------
+
+# Test case 3: Empty matrices
+>>> m_a = []
+>>> m_b = [[]]
+>>> matrix_mul(m_a, m_b)
+Traceback (most recent call last):
+    ...
+ValueError: m_a can't be empty or m_b can't be empty
+
+# Test case 4: Matrices cannot be multiplied
+>>> m_a = [[1, 2, 3], [4, 5, 6]]
+>>> m_b = [[7, 8], [9, 10]]
+>>> matrix_mul(m_a, m_b)
+Traceback (most recent call last):
+    ...
+ValueError: m_a and m_b can't be multiplied
+
+# Test case 5: Matrices of different row sizes
+>>> m_a = [[1, 2, 3], [4, 5]]
+>>> m_b = [[7, 8], [9, 10], [11, 12]]
+>>> matrix_mul(m_a, m_b)
+Traceback (most recent call last):
+    ...
+TypeError: Each row of m_a must be of the same size or each row of m_b must be of the same size
+
+# Test case 6: Matrices with invalid types
+>>> m_a = [[1, 2, 3], [4, 5, 6]]
+>>> m_b = [[7, 8], [9, '10'], [11, 12]]
+>>> matrix_mul(m_a, m_b)
+Traceback (most recent call last):
+    ...
+TypeError: m_a should contain only integers or floats or m_b should contain only integers or floats
+
+# Test case 7: Matrices with invalid types and sizes
+>>> m_a = [[1, 2, 'a'], [4, 5, 6]]
+>>> m_b = [[7, 8], [9, '10'], [11, 12]]
+>>> matrix_mul(m_a, m_b)
+Traceback (most recent call last):
+    ...
+TypeError: m_a should contain only integers or floats or m_b should contain only integers or floats
+
+# Test case 8: Single element matrices
+>>> m_a = [[1]]
+>>> m_b = [[2]]
+>>> matrix_mul(m_a, m_b)
+[[2]]
+
+
