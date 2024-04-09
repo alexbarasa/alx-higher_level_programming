@@ -5,6 +5,8 @@ This is the "0-add_integer" module.
 The 0-add_integer module supplies one function, add_integer().  For example,
 
 """
+
+
 def add_integer(a, b=98):
 
     """
@@ -12,7 +14,8 @@ def add_integer(a, b=98):
 
     Args:
         a (int or float): The first integer or float.
-        b (int or float, optional): The second integer or float. Defaults to 98.
+        b (int or float, optional): The second integer or float.
+        Defaults to 98.
 
     Returns:
         int: The addition of a and b.

@@ -14,9 +14,8 @@ def matrix_divided(matrix, div):
     """
     new_matrix = []
     length = 0
-
     # Divide all elements of a matrix
-    if not (isinstance(div, int)  or isinstance(div, float)):
+    if not (isinstance(div, int) or isinstance(div, float)):
         raise TypeError('div must be a number')
     # Matrix must be a list of integers or floats, TypeError
     if type(matrix) is not list:
@@ -58,4 +57,4 @@ def matrix_divided(matrix, div):
             newrow.append(round(item / div, 2))
         # add content to the matrix
         new_matrix.append(newrow)
-    return new_matrix
+    return (new_matrix)

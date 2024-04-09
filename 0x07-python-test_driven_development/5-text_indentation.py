@@ -25,7 +25,8 @@ def text_indentation(text):
     text = text.replace('?', '?\n\n')
     text = text.replace(':', ':\n\n')
 
-    # Split the text into lines, strip each line of leading and trailing spaces,
+    # Split the text into lines, strip each line of
+    # leading and trailing spaces,
     # then join them back together with new lines
     indented_text = "\n".join([line.strip() for line in text.split("\n")])
 
